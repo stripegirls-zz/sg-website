@@ -1,0 +1,6 @@
+cms/*
+framework/*
+silverstripe-dynamodb/*
+vendor/*
+environmentcheck/*
+crontask/*
