@@ -5,6 +5,20 @@
 				<a href="$BaseHref" class="brand" rel="home">$SiteConfig.Title</a>
 				<span class="arrow">&rarr;</span> <% include Navigation %></div>
 			<small class="right"><a href="http://simple.innovatif.com/about/">Theme</a> by <a href="http://www.saratusar.com">Sara</a> (Innovatif) / Powered by <a href="http://silverstripe.org">SilverStripe</a></small>
+			<% with $SiteConfig %>
+			<% if $FacebookAccount || $TwitterAccount %>
+			<div class="social-media right">
+			<ul>
+    			<% if $FacebookAccount %>
+      				<li><a href="$FacebookAccount">Facebook account link</a></li>
+    			<% end_if %>
+    			<% if $TwitterAccount %>
+      				<li><a href="$TwitterAccount">Twitter account link</a></li>
+    			<% end_if %>                         
+			</ul>
+			</div>	
+			<% end_if %>
+			<% end_with %>   		
 		</div>
 	</div>
 </footer>

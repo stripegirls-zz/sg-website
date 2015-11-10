@@ -841,3 +841,10 @@ body h1 span.amp {
 	    display: none;
 	}
 }
+
+/*temporarily added for social media links in footer area - please delete this later*/
+footer div.social-media {
+	border:1px solid #b90000;
+	padding:5px;
+	clear:right;
+}
