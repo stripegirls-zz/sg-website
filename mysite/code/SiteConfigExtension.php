@@ -28,24 +28,22 @@ class SiteConfigExtension extends DataExtension {
 	 * @param string $media
 	 * @return string 
 	 */
-	public function SocialMediaLink($media = 'facebook'){
-		
-		Debug::dump($media);
-		
+	public function SocialMediaLink($media = 'facebook') {
 		$media = strtolower($media);
 		$link = "";
 		
 		switch($media){
-			case "facebook": $link = Config::inst()->get('SiteConfigExtension', 'facebook_absolute_link');
-							 $link .= $this->owner->FacebookUsername;
-							 break;
-			case "twitter": $link = Config::inst()->get('SiteConfigExtension', 'twitter_absolute_link');
-							$link .= $this->owner->TwitterUsername;
-							break;
-			default: $link = "";
-			
+			case "facebook":
+				$link = Config::inst()->get('SiteConfigExtension', 'facebook_absolute_link');
+				$link .= $this->owner->FacebookUsername;
+				break;
+			case "twitter":
+				$link = Config::inst()->get('SiteConfigExtension', 'twitter_absolute_link');
+				$link .= $this->owner->TwitterUsername;
+				break;
+			default:
+				$link = "";
 		}
-		
  		return $link;
 	}
 }
