@@ -13,7 +13,7 @@
 	      				<li><a href="$SocialMediaLink">$SocialMediaLink</a></li>
 	    			<% end_if %>
 	    			<% if $TwitterUsername %>
-	      				<li><a href="$SocialMediaLink('twitter')">$SocialMediaLink('Twitter')</a></li>
+	      				<li><a href="$SocialMediaLink(twitter)">$SocialMediaLink(twitter)</a></li>
 	    			<% end_if %>                     
 				</ul>
 				</div>	
