@@ -1,4 +1,8 @@
 <?php
+/**
+ * Extending Siteconfig.
+ *
+ */
 class SiteConfigExtension extends DataExtension {
 
 	private static $db = array (
@@ -6,6 +10,11 @@ class SiteConfigExtension extends DataExtension {
 			'TwitterUsername' => 'Varchar(64)'
 	);
 
+	/**
+	 * Adds social link to the Site configuration
+	 *
+	 * @param Fieldlist $fields
+	 */
 	public function updateCMSFields(FieldList $fields) {
 		$fields->addFieldsToTab('Root.SocialMedia', array (
 				TextField::create('FacebookUsername','Facebook Username'),
@@ -13,7 +22,15 @@ class SiteConfigExtension extends DataExtension {
 		));
 	}
 	
-	public function getSocialMediaLink($media = 'facebook'){
+	/**
+	 * Gets a social link string with a specific user account
+	 *
+	 * @param string $media
+	 * @return string 
+	 */
+	public function SocialMediaLink($media = 'facebook'){
+		
+		Debug::dump($media);
 		
 		$media = strtolower($media);
 		$link = "";
@@ -26,7 +43,9 @@ class SiteConfigExtension extends DataExtension {
 							$link .= $this->owner->TwitterUsername;
 							break;
 			default: $link = "";
+			
 		}
+		
  		return $link;
 	}
 }
