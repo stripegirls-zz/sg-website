@@ -20,7 +20,8 @@ class Event extends DataObject {
 	);
 	
 	private static $has_one = array(
-		'Photo' => 'Image'	
+		'Photo' => 'Image',
+		'EventListPage' => 'EventListPage'	
 	);
 	
 	private static $summary_fields = array(
@@ -53,5 +54,9 @@ class Event extends DataObject {
 		$uploader->setFolderName('event-photos');
 		$uploader->getValidator()->setAllowedExtensions(array('jpg', 'jpeg', 'gif', 'png'));
 		return $fields;
+	}
+	
+	public function Link(){
+		return $this->EventListPage()->Link('show/'.$this->ID);
 	}
 }
