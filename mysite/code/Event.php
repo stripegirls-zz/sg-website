@@ -5,13 +5,12 @@
  *
  */
 class Event extends DataObject {
-	//Assumption: all events take place on one day, and does not last over days
+	
 	private static $db = array(
 		'Title' => 'Varchar(128)',
 		'Venue' => 'Varchar(128)',
-		'Date' => 'Date',
-		'StartTime' => 'Time',
-		'EndTime' => 'Time',
+		'StartDateTime' => 'SS_Datetime',
+		'EndDateTime' => 'SS_Datetime',
 		'Price' => 'Currency',
 		'Description' => 'Text',
 		'Agenda' => 'HTMLText',
@@ -27,8 +26,7 @@ class Event extends DataObject {
 	private static $summary_fields = array(
 		'Title' => 'Event Title',
 		'Venue' => 'Venue',
-		'Date' => 'Event Date',
-		'StartTime' => 'Starting at',
+		'StartDateTime' => 'Starting at',
 		'Price' => 'Event Fee',
 		'Organizer' => 'Organizer'	
 	);
@@ -40,10 +38,10 @@ class Event extends DataObject {
 		$fields->addFieldsToTab('Root.Main',array(
 				TextField::create('Title', 'Title of event'),
 				TextField::create('Venue'),
-				DateField::create('Date')
-					->setConfig('showcalendar', true),
-				TimeField::create('StartTime', 'Event start time'),
-				TimeField::create('EndTime', 'Event end time'),
+				$startDateTime = DatetimeField::create('StartDateTime', 'Start Date/Time (yyyy-MM-dd HH:mm)')
+					->setConfig('datavalueformat', 'yyyy-MM-dd HH:mm'),
+				$endDateTime = DatetimeField::create('EndDateTime', 'End Date/Time (yyyy-MM-dd HH:mm)')
+					->setConfig('datavalueformat', 'yyyy-MM-dd HH:mm'),
 				CurrencyField::create('Price', 'Event fee'),
 				TextareaField::create('Description', 'Description of event'),
 				TextField::create('Organizer'),
@@ -53,6 +51,11 @@ class Event extends DataObject {
 		$fields->addFieldtoTab('Root.Image', $uploader = UploadField::create('Photo'));
 		$uploader->setFolderName('event-photos');
 		$uploader->getValidator()->setAllowedExtensions(array('jpg', 'jpeg', 'gif', 'png'));
+		$startDateTime->getDateField()->setConfig('showcalendar', 1)
+									  ->setConfig('dateformat', 'yyyy-MM-dd');
+		$endDateTime->getDateField()->setConfig('showcalendar', 1)
+									  ->setConfig('dateformat', 'yyyy-MM-dd');
+		
 		return $fields;
 	}
 	
