@@ -13,3 +13,6 @@ framework/
 silverstripe-*
 crontask/
 environmentcheck/
+blog/
+lumberjack/
+tagfield/
