@@ -7,9 +7,8 @@
 		"silverstripe/framework": "^3.1.13@stable",
 		"silverstripe/dynamodb": "^1.0.0@stable",
 		"silverstripe/environmentcheck": "*",
-		"silverstripe/blog": "2.3.0",
-		"silverstripe/widgets": "*",
-		"silverstripe/comments": "*"
+		"silverstripe/blog": "^2.3.0@stable",
+		"silverstripe/comments": "^2.0.2@stable"
 	},
 	"require-dev": {
 		"phpunit/PHPUnit": "~3.7@stable"

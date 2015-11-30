@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2365c395605a2981373ccb8bc2cc5601",
-    "content-hash": "7e3cd4091c4560230b7db955f4404cc7",
+    "hash": "ad74cd15aa7b7c56982e07a11dcc9268",
+    "content-hash": "dedd36bd75ef163bc802f85177f76bb9",
     "packages": [
         {
             "name": "assertchris/hash-compat",
@@ -559,16 +559,16 @@
         },
         {
             "name": "silverstripe/comments",
-            "version": "dev-master",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-comments.git",
-                "reference": "167e4dd02a7a13506cfe79222e02cb463a61a834"
+                "reference": "04b95cb943a4416b3dc0837535a79fa65dd5adbb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-comments/zipball/167e4dd02a7a13506cfe79222e02cb463a61a834",
-                "reference": "167e4dd02a7a13506cfe79222e02cb463a61a834",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-comments/zipball/04b95cb943a4416b3dc0837535a79fa65dd5adbb",
+                "reference": "04b95cb943a4416b3dc0837535a79fa65dd5adbb",
                 "shasum": ""
             },
             "require": {
@@ -589,9 +589,6 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
             "authors": [
                 {
                     "name": "Will Rossiter",
@@ -603,7 +600,7 @@
                 "comments",
                 "silverstripe"
             ],
-            "time": "2015-11-21 12:27:45"
+            "time": "2015-11-19 03:34:57"
         },
         {
             "name": "silverstripe/crontask",
@@ -950,51 +947,6 @@
                 "tag"
             ],
             "time": "2015-11-04 01:25:35"
-        },
-        {
-            "name": "silverstripe/widgets",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/silverstripe/silverstripe-widgets.git",
-                "reference": "db6500c3b0b4069b7bf0b9cda9e42a956b31ef7b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-widgets/zipball/db6500c3b0b4069b7bf0b9cda9e42a956b31ef7b",
-                "reference": "db6500c3b0b4069b7bf0b9cda9e42a956b31ef7b",
-                "shasum": ""
-            },
-            "require": {
-                "silverstripe/cms": ">=3.2",
-                "silverstripe/framework": ">=3.2"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~3.7@stable"
-            },
-            "type": "silverstripe-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.2.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Ingo Schommer",
-                    "email": "ingo@silverstripe.com"
-                }
-            ],
-            "description": "Widgets are small pieces of functionality such as showing the latest Comments or Flickr Photos. They normally display on the sidebar of your website.",
-            "keywords": [
-                "blog",
-                "silverstripe",
-                "widgets"
-            ],
-            "time": "2015-11-21 12:28:19"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -1484,6 +1436,8 @@
         "silverstripe/cms": 0,
         "silverstripe/framework": 0,
         "silverstripe/dynamodb": 0,
+        "silverstripe/blog": 0,
+        "silverstripe/comments": 0,
         "phpunit/phpunit": 0
     },
     "prefer-stable": false,
