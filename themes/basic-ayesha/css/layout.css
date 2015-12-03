@@ -156,13 +156,13 @@ body {
 		    padding: 0;
 		    font-size: 48px;
 		    font-family: "HelveticaNeueLTPro-Bd", "Helvetica Neue LT Pro Bold", "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue LT Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-		    color: #fff;
+		    color: #333; /* #fff; */
 		    font-weight: 600;
 		    font-stretch: normal; /* default value. No font stretching */
 		    line-height: 1em;
 		}
 		.brand p {
-		    color: #888;
+		    color: #333; /* #888; */
 		    margin-bottom: 22px;
 		}
 
@@ -235,7 +235,7 @@ body {
 	    white-space: nowrap; /* forces text to never wrap onto a second line */
 	}
 	.header .primary li a {
-	    color: #888;
+	    color:  #333; /* #888; */
 	    font-size: 15px;
 	    font-family: Helvetica, Arial, sans-serif;
 	    padding: 6px 8px;
@@ -243,11 +243,11 @@ body {
 	    display: block;
 	}
 	.header .primary li a:hover {
-	    color: #fff;
+	    color:  #f1ebeb; /* #fff; */
 	}
 	.header .primary li.section a,
 	.header .primary li.current a {
-	    color: #fff;
+	    color: #f1ebeb; /* #fff; */
 	}
 	.header .primary li.section:after,
 	.header .primary li.current:after {
@@ -259,7 +259,7 @@ body {
 	    bottom: -7px;
 	    font-family: 'WebSymbolsRegular';
 	    font-size: 30px;
-	    color: #fff;
+	    color: #f1ebeb; /* #fff; */
 	    text-align: center;
 	    line-height: 20px;
 	}
