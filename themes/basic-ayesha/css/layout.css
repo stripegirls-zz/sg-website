@@ -111,7 +111,7 @@ body {
 	    min-width: 860px; /* media queries are not supported in ie7/8 without a polyfill */
 	}
 	.main {
-	    background: #fff;
+	    background: #f1ebeb; /* #fff; */
 	    padding: 40px 0 60px;
 	    min-height: 300px;
 	}
@@ -137,7 +137,7 @@ body {
 
 /* HEADER */
 .header {
-    background: #161616;
+    background: #cacaca; /* #161616; */
 }
 	.header .inner {
 	    padding-top: 45px;
