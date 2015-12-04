@@ -33,5 +33,11 @@ class Page_Controller extends ContentController {
 		// You can include any CSS or JS required by your project here.
 		// See: http://doc.silverstripe.org/framework/en/reference/requirements
 	}
+	/**
+	 * Display copyright in footer area
+	 */
+	public function OurCopyright(){
+		return "&copy; StripeGirls " . date('Y');
+	}
 
 }
