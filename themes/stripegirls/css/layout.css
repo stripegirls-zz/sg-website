@@ -168,7 +168,8 @@ body {
 		    line-height: 1em;
 		}
 		.brand p {
-		    color: #888;
+		    /* color: #888; original*/
+		    color:#333;
 		    margin-bottom: 22px;
 		}
 
@@ -241,7 +242,8 @@ body {
 	    white-space: nowrap; /* forces text to never wrap onto a second line */
 	}
 	.header .primary li a {
-	    color: #888;
+	    /* color: #888; original*/
+	    color: #333;
 	    font-size: 15px;
 	    font-family: Helvetica, Arial, sans-serif;
 	    padding: 6px 8px;
@@ -249,11 +251,13 @@ body {
 	    display: block;
 	}
 	.header .primary li a:hover {
-	    color: #fff;
+	    /* color: #fff; original*/
+	    color: #f1ebeb;
 	}
 	.header .primary li.section a,
 	.header .primary li.current a {
-	    color: #fff;
+	    /* color: #fff; original*/
+	    color: #f1ebeb;
 	}
 	.header .primary li.section:after,
 	.header .primary li.current:after {
@@ -265,7 +269,8 @@ body {
 	    bottom: -7px;
 	    font-family: 'WebSymbolsRegular';
 	    font-size: 30px;
-	    color: #fff;
+	    /* color: #fff; original*/
+	    color: #f1ebeb;
 	    text-align: center;
 	    line-height: 20px;
 	}
