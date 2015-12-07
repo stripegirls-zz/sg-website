@@ -28,7 +28,7 @@ class Event extends DataObject {
 			'Organizer' => 'Organizer',
 			'Link' => 'Link' 
 	);
-	//TODO: Peer Review needed! - what fields should we have for searching fiters?
+	
 	public function searchableFields() {
 		return array (
 				'Title' => array (
