@@ -1,7 +1,8 @@
 <?php
 /** 
  * Event list page listing past events, and upcoming evnets.
- * 
+ * Initially we can list past and future events on the same page. (we might want one page for past events and another one
+ * for future events in the future)
  */
 class EventListPage extends Page{
 	
@@ -28,6 +29,9 @@ class EventListPage_Controller extends Page_Controller {
 			'show'
 	);
 	
+	//TO DO: Need to work on filter parts of both PastEvents and UpcomingEvents
+	// It is oversimplified at the moment
+	
 	/**
 	 * @param $num how many past events should be displayed on that particular list page
 	 * @return a list of past events
@@ -48,11 +52,7 @@ class EventListPage_Controller extends Page_Controller {
 			'StartDateTime:GreaterThanOrEqual' => $now
 		))->sort('StartDateTime', 'ASC')->limit($num);
 	}
-	/**
-	 * Showing a detailed page of a particular event
-	 * @param SS_HTTPRequest $request
-	 * @return multitype:NULL DataObject
-	 */
+	
 	public function show(SS_HTTPRequest $request){
 		$event = Event::get()->byID($request->param('ID'));
 	
