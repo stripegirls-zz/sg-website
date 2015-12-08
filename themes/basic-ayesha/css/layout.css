@@ -568,12 +568,12 @@ body h1 span.amp {
 	}
 }
 
-/* BREAKPOINT 640px */
+/* BREAKPOINT 768px */
 
-/* when changing the breakpoint below, change it ito the same value in the script.js file as well */
-@media only screen and (max-width: 640px) {
+/* when changing the breakpoint below, change it into the same value in the script.js file as well */
+@media only screen and (max-width: 768px) {
 	body {
-	    max-width: 640px;
+	    max-width: 768px;
 	}
 	#media-query-trigger {
 	    visibility: visible;
