@@ -13,7 +13,7 @@
 					$SearchForm
 				</div>
 			<% end_if %>
-			<% include Navigation %>
+			
 		</div>
 	</div>
 </header>
