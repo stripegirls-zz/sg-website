@@ -2,7 +2,7 @@
 	<div class="inner">
 		<div class="unit size4of4 lastUnit">
 			<div class="left">
-				<div class="copyright">$OurCopyright</div>
+				<div class="copyright">$Copyright</div>
 			</div>
 			<% with $SiteConfig %>
 				<% if $FacebookUsername || $TwitterUsername %>

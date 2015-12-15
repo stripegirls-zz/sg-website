@@ -37,10 +37,11 @@ class Page_Controller extends ContentController {
 		Requirements::javascript("framework/thirdparty/jquery/jquery.js");
 		Requirements::javascript("{$this->ThemeDir()}/javascript/script.js");		
 	}
+	
 	/**
 	 * Display copyright in footer area
 	 */
-	public function OurCopyright(){
+	public function Copyright() {
 		return "&copy; StripeGirls " . date('Y');
 	}
 
