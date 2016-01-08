@@ -4,7 +4,15 @@
  */
 class HomePage extends Page
 {
-    
+	/**
+	 * Get Homepage Carousel slide items
+	 */
+    public function CarouselSlides(){
+    	$carousel = Carousel::get()->byID(3);
+    	if($carousel){
+    		return $carousel->Slides();
+    	}
+    }
 }
 
 class HomePage_Controller extends Page_Controller
