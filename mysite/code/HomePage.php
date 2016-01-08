@@ -7,8 +7,11 @@ class HomePage extends Page
 	/**
 	 * Get Homepage Carousel slide items
 	 */
-    public function CarouselSlides(){
-    	$carousel = Carousel::get()->byID(3);
+    public function CarouselSlides($name){
+    	$carousel = Carousel::get()->filter(array(
+    			'Name' => $name
+    	))->first();
+    	
     	if($carousel){
     		return $carousel->Slides();
     	}

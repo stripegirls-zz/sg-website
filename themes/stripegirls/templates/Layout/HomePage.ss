@@ -4,7 +4,7 @@
 	<h1>$Title</h1>
 	<!-- Carousel --> <!-- Contents and images are temporarily put as placeholders for testing purpose -->
 	<div class="homepage_carousel">
-		<% loop $CarouselSlides %>
+		<% loop $CarouselSlides('HomePageCarousel') %>
 	    <div class="line">
 			<div class="unit size1of2">
 				<h3>$Title</h3>
