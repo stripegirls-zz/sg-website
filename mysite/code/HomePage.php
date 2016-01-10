@@ -2,24 +2,26 @@
 /**
  *  Homepage with a carousel on the top of the page
  */
-class HomePage extends Page
-{
-	/**
-	 * Get Homepage Carousel slide items
-	 */
-    public function CarouselSlides($name){
-    	$carousel = Carousel::get()->filter(array(
-    			'Name' => $name
-    	))->first();
-    	
-    	if($carousel){
-    		return $carousel->Slides();
-    	}
-    }
+class HomePage extends Page {
+	
+	private static $has_many = array(
+			'CarouselSlides' => 'CarouselItem' 
+	);
+	
+	public function getCMSFields(){
+		$fields = parent::getCMSFields();
+		$fields->addFieldToTab('Root.Carousel', GridField::create(
+			'CarouselSlides',
+			'Carousel slides',
+			$this->CarouselSlides(),
+			GridFieldConfig_RecordEditor::create()		
+		));
+		return $fields;
+	}
+    
 }
 
-class HomePage_Controller extends Page_Controller
-{
+class HomePage_Controller extends Page_Controller {
 	/**
 	 * @see Page_Controller::init()
 	 * make use of jquery carousel plugin slick (http://kenwheeler.github.io/slick/)

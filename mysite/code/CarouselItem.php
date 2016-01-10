@@ -11,7 +11,7 @@ class CarouselItem extends DataObject {
 	
 	private static $has_one = array(
 			'SlideImage' => 'Image',
-			'Carousel' => 'Carousel'
+			'HomePage' => 'HomePage'
 	);
 	
 	public function getCMSFields(){
