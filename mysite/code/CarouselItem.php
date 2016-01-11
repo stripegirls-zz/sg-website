@@ -6,13 +6,22 @@ class CarouselItem extends DataObject {
 	
 	private static $db = array(
 			'Title' => 'Varchar(128)',
-			'Caption' => 'Text'
+			'Caption' => 'Text',
+			'SortOrder'=>'Int'
 	);
 	
 	private static $has_one = array(
 			'SlideImage' => 'Image',
 			'HomePage' => 'HomePage'
 	);
+	
+	private static $summary_fields = array(
+			'SlideImage.CMSThumbnail' => 'Slide Image',
+			'Title' => 'Title',
+			'Caption' => 'Caption',
+	);
+	
+	public static $default_sort='SortOrder';
 	
 	public function getCMSFields(){
 		$fields = FieldList::create(

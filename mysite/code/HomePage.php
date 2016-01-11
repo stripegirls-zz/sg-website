@@ -10,12 +10,17 @@ class HomePage extends Page {
 	
 	public function getCMSFields(){
 		$fields = parent::getCMSFields();
-		$fields->addFieldToTab('Root.Carousel', GridField::create(
-			'CarouselSlides',
-			'Carousel slides',
-			$this->CarouselSlides(),
-			GridFieldConfig_RecordEditor::create()		
-		));
+		
+		$conf=GridFieldConfig_RelationEditor::create(10);
+		$conf->addComponent(new GridFieldSortableRows('SortOrder'));
+		
+		$fields->addFieldToTab('Root.Carousel', new GridField(
+				'CarouselSlides', 
+				'Carousel slides', 
+				$this->CarouselSlides(), 
+				$conf)
+		);
+				
 		return $fields;
 	}
     
