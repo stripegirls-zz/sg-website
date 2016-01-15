@@ -9,7 +9,7 @@
 			<div class="unit size1of2">
 				<h3>$Title</h3>
 				<p>$Caption</p>
-		        <p><button>Join Us</button></p>
+		        <p><a class="btn" href="$Top.CarouselButtonLink">Join Us</a></p>
 			</div>
 			<div class="unit size1of2 lastUnit slideimage_container">
 				$SlideImage

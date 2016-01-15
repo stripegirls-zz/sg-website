@@ -3,6 +3,12 @@
  *  Homepage with a carousel on the top of the page
  */
 class HomePage extends Page {
+	/**
+	 * For button link (Join Us button link)
+	 */
+	private static $db = array(
+			'CarouselButtonLink' => 'Varchar(128)'
+	);
 	
 	private static $has_many = array(
 			'CarouselSlides' => 'CarouselItem' 
@@ -20,6 +26,8 @@ class HomePage extends Page {
 				$this->CarouselSlides(), 
 				$conf)
 		);
+		
+		$fields->addFieldToTab('Root.Main', TextField::create('CarouselButtonLink'), 'Content');
 				
 		return $fields;
 	}
