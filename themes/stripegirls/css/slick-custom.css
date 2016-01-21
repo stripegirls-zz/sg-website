@@ -12,7 +12,7 @@ body.HomePage img {
 }
 
 body.HomePage div.homepage_carousel{
-	padding-bottom:30px;
+	padding-bottom:10px;
 }
 
 .slick-dots li button::before {
@@ -24,8 +24,8 @@ body.HomePage div.homepage_carousel{
     opacity: 0.75;
 }
 
-.slick-dots {
-    bottom: -50px;
+ul.slick-dots {
+    visibility: hidden;
 }
 
 body.HomePage div.slideimage_container > img{
@@ -33,7 +33,36 @@ body.HomePage div.slideimage_container > img{
 	height:auto;	
 }
 
-.slick-slider {
-    margin-bottom: 60px;
+
+body.HomePage .typography h3 {
+	font-size:3em;
+	margin-bottom:20px;
 }
 
+div.carousel_join_us_button {
+	margin-top:45px;
+	text-align:center;
+}
+
+body.HomePage .carousel_join_us_button a {
+	background-color:#0080ff;
+	display:inline-block; 
+	width:150px;
+	margin-right:auto;
+	margin-left:auto;
+	float:none;
+	text-align:center;
+	font-size:24px;
+	text-transform:none;
+	padding-bottom:15px;
+	padding-top:15px;
+}
+
+body.HomePage .carousel_join_us_button a:hover {
+	background-color:#24C0EB;
+	border:none;
+}
+
+body.HomePage a.btn::after {
+    content: "";
+}
