@@ -8,7 +8,8 @@
 		"silverstripe/dynamodb": "^1.0.0@stable",
 		"silverstripe/environmentcheck": "*",
 		"silverstripe/blog": "^2.3.0@stable",
-		"silverstripe/comments": "^2.0.2@stable"
+		"silverstripe/comments": "^2.0.2@stable",
+		"undefinedoffset/sortablegridfield": "^0.5.3"
 	},
 	"require-dev": {
 		"phpunit/PHPUnit": "~3.7@stable"

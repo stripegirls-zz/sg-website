@@ -1,0 +1,76 @@
+.inner.typography {
+	max-width: 1300px; /* to compensate for the extra 50px padding */
+}
+
+.slick-prev::before, .slick-next::before {
+    color: #c80000 ;
+}
+
+body.HomePage div.content-container {
+	padding-left:50px;
+	padding-right:50px;
+}
+
+body.HomePage img {
+	border:none;
+}
+
+body.HomePage div.homepage_carousel{
+	min-height: 350px;
+}
+
+.slick-slider {
+	margin-bottom: 0;
+}
+
+.slick-dots li button::before {
+    color: #c80000;
+    font-size: 12px;   
+}
+.slick-dots li.slick-active button::before {
+    color: #c80000;
+    opacity: 0.75;
+}
+
+ul.slick-dots {
+    visibility: hidden;
+}
+
+body.HomePage div.slideimage_container{
+	background-position: top center;
+	background-size: cover;
+	height: 350px;
+}
+
+
+body.HomePage .typography h3 {
+	font-size:3em;
+	margin-bottom:20px;
+}
+
+div.carousel_join_us_button {
+	text-align:center;
+}
+
+body.HomePage .carousel_join_us_button a {
+	background-color:#0080ff;
+	display:inline-block; 
+	width:150px;
+	margin-right:auto;
+	margin-left:auto;
+	float:none;
+	text-align:center;
+	font-size:24px;
+	text-transform:none;
+	padding-bottom:15px;
+	padding-top:15px;
+}
+
+body.HomePage .carousel_join_us_button a:hover {
+	background-color:#24C0EB;
+	border:none;
+}
+
+body.HomePage a.btn::after {
+    content: "";
+}
