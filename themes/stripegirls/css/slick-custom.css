@@ -1,3 +1,7 @@
+.inner.typography {
+	max-width: 1300px; /* to compensate for the extra 50px padding */
+}
+
 .slick-prev::before, .slick-next::before {
     color: #c80000 ;
 }
@@ -12,7 +16,11 @@ body.HomePage img {
 }
 
 body.HomePage div.homepage_carousel{
-	padding-bottom:10px;
+	min-height: 350px;
+}
+
+.slick-slider {
+	margin-bottom: 0;
 }
 
 .slick-dots li button::before {
@@ -28,9 +36,10 @@ ul.slick-dots {
     visibility: hidden;
 }
 
-body.HomePage div.slideimage_container > img{
-	width:100%;
-	height:auto;	
+body.HomePage div.slideimage_container{
+	background-position: top center;
+	background-size: cover;
+	height: 350px;
 }
 
 
@@ -40,7 +49,6 @@ body.HomePage .typography h3 {
 }
 
 div.carousel_join_us_button {
-	margin-top:45px;
 	text-align:center;
 }
 

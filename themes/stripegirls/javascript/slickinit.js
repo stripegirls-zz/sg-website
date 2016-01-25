@@ -4,7 +4,7 @@ jQuery.noConflict();
 	$(document).ready(function(){
 		$('.homepage_carousel').slick({
 			autoplay: true,
-			autoplaySpeed: 4000,
+			autoplaySpeed: 5000,
 			dots: true,
 			arrows: true,
 		});
