@@ -1,17 +1,14 @@
-<div class="content-container unit size3of4 lastUnit">
+<div class="content-container">
 	<!-- Carousel -->
 	<div class="homepage_carousel">
 		<% loop $CarouselSlides %>
 		<div>
-			<div class="line">
-				<div class="unit size1of2" style="padding: 10% 5% 10% 0">
-					<div>
+			<div class="slideimage_container" style="background-image: url('$SlideImage.URL');">
+				<div style="background-color: rgba(0, 0, 0, 0.5);height: 100%">
+				<div class="slider_text">
 					<h3>$Title</h3>
 					<p>$Caption</p>
-					</div>
 				</div>
-				<div class="unit size1of2 lastUnit slideimage_container"
-					 style="background-image: url('$SlideImage.URL');">
 				</div>
 			</div>
 		</div>
@@ -19,8 +16,8 @@
 	</div>
 	<!-- end Carousel -->
 	
-	<div class="line">
-		<div class="unit size1of1 carousel_join_us_button">
+	<div class="carousel_button_container">
+		<div class="carousel_join_us_button">
 			<a class="btn" href="$Top.CarouselButtonLink">Join us!</a>
 		</div>
 	</div>

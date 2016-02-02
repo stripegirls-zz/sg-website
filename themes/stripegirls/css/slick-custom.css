@@ -1,51 +1,47 @@
-.inner.typography {
-	max-width: 1300px; /* to compensate for the extra 50px padding */
-}
-
-.slick-prev::before, .slick-next::before {
-    color: #c80000 ;
-}
-
-body.HomePage div.content-container {
-	padding-left:50px;
-	padding-right:50px;
-}
-
-body.HomePage img {
-	border:none;
-}
-
-body.HomePage div.homepage_carousel{
-	min-height: 350px;
-}
-
 .slick-slider {
 	margin-bottom: 0;
 }
 
-.slick-dots li button::before {
-    color: #c80000;
-    font-size: 12px;   
+.slick-prev {
+	left: 0;
+	z-index: 300;
 }
-.slick-dots li.slick-active button::before {
-    color: #c80000;
-    opacity: 0.75;
+.slick-next {
+	right: 0;
+	z-index: 300
+}
+.slick-prev:before {
+  content: "<";
+  color: #FFF;
+  font-size: 60px;
+  opacity: 0.3;
+  padding-left: 15px;
+}
+.slick-next:before {
+  content: ">";
+  color: #FFF;
+  font-size: 60px;
+  margin-left: -15px;
+  opacity: 0.3;
 }
 
 ul.slick-dots {
     visibility: hidden;
+	margin: 0;
 }
 
 body.HomePage div.slideimage_container{
 	background-position: top center;
-	background-size: cover;
-	height: 350px;
+	background-size: 100% 100%;
+	height: 550px;
 }
 
 
 body.HomePage .typography h3 {
 	font-size:3em;
 	margin-bottom:20px;
+	color: #FFF;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 }
 
 div.carousel_join_us_button {
@@ -73,4 +69,22 @@ body.HomePage .carousel_join_us_button a:hover {
 
 body.HomePage a.btn::after {
     content: "";
+}
+
+.carousel_button_container {
+	position: absolute;
+	margin-top: -100px;
+	width: 100%;
+}
+.slider_text {
+	padding: 10% 5% 15% 10%;
+	font-size: 1.5em;
+}
+body.HomePage .typography h3 {
+
+}
+.typography p {
+	font-size: 1em;
+	color:#FFF;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 }
