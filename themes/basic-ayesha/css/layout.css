@@ -111,7 +111,7 @@ body {
 	    min-width: 860px; /* media queries are not supported in ie7/8 without a polyfill */
 	}
 	.main {
-	    background: #f1ebeb; /* #fff; */
+	    background: #f1ebeb;
 	    padding: 40px 0 60px;
 	    min-height: 300px;
 	}
@@ -137,7 +137,7 @@ body {
 
 /* HEADER */
 .header {
-    background: #cacaca; /* #161616; */
+    background: #cacaca;
 }
 	.header .inner {
 	    padding-top: 45px;
@@ -259,7 +259,7 @@ body {
 	    bottom: -7px;
 	    font-family: 'WebSymbolsRegular';
 	    font-size: 30px;
-	    color: #f1ebeb; 
+	    color: #f1ebeb;
 	    text-align: center;
 	    line-height: 20px;
 	}
@@ -425,8 +425,8 @@ body h1 span.amp {
 
 /* FOOTER */
 .footer {
-    color: #333; /* #999; */
-    background: #cacaca; /* #ededed; */
+    color: #999;
+    background: #cacaca;
     padding: 20px 0;
     font-size: 11px;
     line-height: 22px;
