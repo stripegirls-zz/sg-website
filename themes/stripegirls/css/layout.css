@@ -316,7 +316,7 @@ body {
 		    margin-bottom: 0;
 		}
 			.main .secondary li .arrow {
-			    color: #0080ff; 
+			    color: #0080ff;
 			    padding-right: 5px;
 			    display: block;
 			    font-size: 15px;
@@ -347,7 +347,7 @@ body {
 		    display: block;
 		}
 		.main .secondary li.current a.current {
-			color: #b80000;
+			color: #0080ff;
 			background-color: #EDEDED;
 		}
 		.main .secondary li.section,
@@ -390,7 +390,7 @@ body {
 		.main .secondary li a:hover,
 		.main .secondary li.section a:hover,
 		.main .secondary li.current a:hover {
-			color: #b80000;
+			color: #24C0EB;
 		}
 
 
@@ -417,7 +417,7 @@ footer:after { /* clearfix */
     transition: color 0.2s;
 }
 .footer a.brand { color: #333; margin-left: 0; }
-.footer a.brand:hover { color: #B80000; }
+.footer a.brand:hover { color: #0080ff; }
 body h1 span.amp {
     font-family: Baskerville,"Goudy Old Style","Palatino","Book Antiqua",Georgia;
     font-style: italic;
@@ -478,7 +478,7 @@ body h1 span.amp {
 	}
 	.footer .arrow {
 	    padding: 0 8px 0 5px;
-	    color: #b80000;
+	    color: #0080ff;
 	    font-size: 13px;
 	}
 	.footer .primary .nav-open-button {
@@ -488,7 +488,7 @@ body h1 span.amp {
 /* PAGE SPECIFIC LAYOUT */
 
 	/* Homepage */
-		/* currently no Hompage specific styles - feel free to add your own */
+		/* currently no Homepage specific styles - feel free to add your own */
 
 	/* Search Results */
 	.typography .searchResults h1 {

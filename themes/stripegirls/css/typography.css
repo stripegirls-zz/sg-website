@@ -6,7 +6,7 @@
  *
  *    Include color hex's or values of your grid
  *      #333333             - body
- *      #B80000             - links, headings
+ *      #0080ff             - links, headings
  *      #D80000             - links on hover
  *      5px Vertical grid   - based on multiples of 5px, eg 10px, 15px, 20px, 25px...
  *
@@ -33,7 +33,7 @@
       font-weight: normal;
       font-style: normal;
   }
-  
+
   @font-face {
     font-family: 'single_sleeveregular';
     src: url('../webfonts/sing-webfont.eot');
@@ -58,7 +58,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
   body a { text-decoration: none; } /* this removes the underline from all links */
-  body a:link { -webkit-tap-highlight-color: #b80000 } /* this sets the highlight color when links are tapped on Safari (browser) on iPhone */
+  body a:link { -webkit-tap-highlight-color: #0080ff } /* this sets the highlight color when links are tapped on Safari (browser) on iPhone */
 
 
 /* HEADERS */
@@ -100,27 +100,28 @@ body {
 
 ::selection,
 ::-moz-selection { /* Applies style to highlighted portion of a page */
-    background: #b80000;
+    background: #0080ff;
     color: #fff;
     text-shadow: none;
 }
 
 /* LINKS */
-.typography a, 
+.typography a,
 .typography a.intro {
-    color: #B80000;
+    color: #0080ff;
     text-decoration: none;
 }
-  .typography a:hover { 
-    color: #D80000;
-    border-bottom: 1px dashed #B80000;
+  .typography a:hover {
+    color: #
+    ;
+    border-bottom: 1px dashed #0080ff;
   }
   .typography a:focus { }
 
 
 /* LIST STYLES
 -------------------------------------------- */
-.typography ul, 
+.typography ul,
 .typography ol,
 .typography dl { margin: 0 0 20px 25px; }
 .typography ul li { list-style-type: disc; } /* adds disc style bullet to the list */
@@ -155,7 +156,7 @@ body {
   }
 
 
-/* WYSIWYG EDITOR ALIGNMENT CLASSES 
+/* WYSIWYG EDITOR ALIGNMENT CLASSES
 -------------------------------------------- */
 .typography .left {
     text-align: left
@@ -168,7 +169,7 @@ body {
 }
 
 
-/* IMAGES 
+/* IMAGES
 -------------------------------------------- */
 .typography img {
     border: 5px solid #d7d7d7;
