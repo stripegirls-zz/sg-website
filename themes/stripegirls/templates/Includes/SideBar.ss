@@ -1,4 +1,4 @@
-<aside class="sidebar unit size1of4">
+<aside class="sidebar unit size1of4 inner">
 	<% if $Menu(2) %>
 		<nav class="secondary">
 			<% with $Level(1) %>
