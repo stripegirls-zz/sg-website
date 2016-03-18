@@ -112,8 +112,6 @@ body {
 	}
 	.main {
 	    background: #fff;
-			padding-top: 20px; /* task 2 internal pages design */
-			padding-bottom: 20px; /* task 2 internal pages design */
 	    min-height: 300px;
 	}
 	.inner {
@@ -124,12 +122,18 @@ body {
 	.ie6 .inner {
 	    width: 960px;
 	}
+	.content-container {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
 	.no-sidebar .content-container {
 	    float: left;
 	    width:100%; /* makes content container full width when there is no sidebar */
 	}
 	.sidebar { /* this is the sidebar element */
 	    margin-top: 12px;
+		padding-top: 20px;
+		padding-bottom: 20px;
 	}
 	.no-sidebar .sidebar {
 		display: none;
