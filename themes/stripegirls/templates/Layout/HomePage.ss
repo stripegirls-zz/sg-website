@@ -1,4 +1,4 @@
-<div class="content-container">
+<div class="content-container" style="padding-top: 0; padding-bottom:0;">
 	<!-- Carousel -->
 	<div class="homepage_carousel">
 		<% loop $CarouselSlides %>
