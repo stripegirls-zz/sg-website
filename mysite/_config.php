@@ -3,9 +3,6 @@
 global $project;
 $project = 'mysite';
 
-global $database;
-$database = 'SS_stripegirls';
-
 require_once('conf/ConfigureFromEnv.php');
 
 // Set the site locale
