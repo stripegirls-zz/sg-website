@@ -3,8 +3,11 @@
 global $project;
 $project = 'mysite';
 
-global $database;
-$database = 'SS_stripegirls';
+if(defined('SS_DATABASE_NAME') && SS_DATABASE_NAME) {
+	$database = SS_DATABASE_NAME;
+} else {
+	$database = 'SS_stripegirls';
+}
 
 require_once('conf/ConfigureFromEnv.php');
 
