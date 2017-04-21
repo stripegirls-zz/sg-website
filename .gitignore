@@ -13,3 +13,9 @@ framework/
 silverstripe-*
 crontask/
 environmentcheck/
+blog/
+comments/
+gridfield-bulk-editing-tools/
+lumberjack/
+tagfield/
+widgets/

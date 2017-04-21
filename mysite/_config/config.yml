@@ -8,4 +8,10 @@ After:
 # See http://doc.silverstripe.org/framework/en/topics/configuration
 # Caution: Indentation through two spaces, not tabs
 SSViewer:
-  theme: 'simple'
+  theme: 'stripegirls'
+SiteConfig:
+  extensions:
+    - SiteConfigExtension
+SiteConfigExtension:
+  facebook_absolute_link: 'http://facebook.com/'
+  twitter_absolute_link: 'http://twitter.com/'
